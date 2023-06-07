@@ -3,10 +3,10 @@ using namespace std;
 
 template <typename T>
 struct Node {
-    T key;
+    string key;
     T value;
     Node* next;
-    Node(const T& k, const T& v) : key(k), value(v), next(nullptr) {}
+    Node(const string& k, const T& v) : key(k), value(v), next(nullptr) {}
 };
 
 template <typename T>
@@ -55,8 +55,8 @@ public:
 
     HashTable(int size);
     ~HashTable();
-    void add(const T& key, const T& value);
-    void del(const T& key);
+    void add(const string& key, const T& value);
+    void del(const string& key);
 
     Iterator begin() const {
         int bucket = 0;
@@ -78,5 +78,5 @@ public:
     float getFullnessCoefficient() const;
 
 private:
-    int hashFunction(const T& key) const;
+    int hashFunction(const string& key) const;
 };

@@ -3,4 +3,4 @@ project(Laba6)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Laba6 main.cpp HashTable.h HashTable.cpp)
+add_executable(Laba6 main.cpp HashTable.h HashTable.cpp MainFunctions.cpp MainFunctions.h)

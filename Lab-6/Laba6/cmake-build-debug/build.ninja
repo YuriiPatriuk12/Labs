@@ -61,6 +61,12 @@ build CMakeFiles/Laba6.dir/HashTable.cpp.obj: CXX_COMPILER__Laba6_Debug C$:/User
   OBJECT_DIR = CMakeFiles\Laba6.dir
   OBJECT_FILE_DIR = CMakeFiles\Laba6.dir
 
+build CMakeFiles/Laba6.dir/MainFunctions.cpp.obj: CXX_COMPILER__Laba6_Debug C$:/Users/Private_55/Desktop/Programming$ essentials$ 2$ semestr/Laba6/MainFunctions.cpp || cmake_object_order_depends_target_Laba6
+  DEP_FILE = CMakeFiles\Laba6.dir\MainFunctions.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\Laba6.dir
+  OBJECT_FILE_DIR = CMakeFiles\Laba6.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Laba6
@@ -69,7 +75,7 @@ build CMakeFiles/Laba6.dir/HashTable.cpp.obj: CXX_COMPILER__Laba6_Debug C$:/User
 #############################################
 # Link the executable Laba6.exe
 
-build Laba6.exe: CXX_EXECUTABLE_LINKER__Laba6_Debug CMakeFiles/Laba6.dir/main.cpp.obj CMakeFiles/Laba6.dir/HashTable.cpp.obj
+build Laba6.exe: CXX_EXECUTABLE_LINKER__Laba6_Debug CMakeFiles/Laba6.dir/main.cpp.obj CMakeFiles/Laba6.dir/HashTable.cpp.obj CMakeFiles/Laba6.dir/MainFunctions.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Laba6.dir

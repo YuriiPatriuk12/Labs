@@ -22,7 +22,7 @@ HashTable<T>::~HashTable() {
 }
 
 template<typename T>
-void HashTable<T>::add(const T &key, const T &value)
+void HashTable<T>::add(const string &key, const T &value)
 {
     int bucket = hashFunction(key);
     Node<T>* newNode = new Node<T>(key, value);
@@ -39,7 +39,7 @@ void HashTable<T>::add(const T &key, const T &value)
 }
 
 template<typename T>
-void HashTable<T>::del(const T &key)  {
+void HashTable<T>::del(const string &key)  {
     int bucket = hashFunction(key);
     Node<T>* currentNode = table[bucket];
     Node<T>* prevNode = nullptr;
@@ -85,11 +85,12 @@ void HashTable<T>::print() const {
 }
 
 template<typename T>
-int HashTable<T>::hashFunction(const T &key) const  {
-    return hash<T>{}(key) % tableSize;
+int HashTable<T>::hashFunction(const string&key) const  {
+    return hash<string>{}(key) % tableSize;
 }
 
 template<typename T>
 float HashTable<T>::getFullnessCoefficient() const {
     return (float)amountOfElements/tableSize;
 }
+
