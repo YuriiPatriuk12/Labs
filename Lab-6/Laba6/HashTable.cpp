@@ -94,3 +94,8 @@ float HashTable<T>::getFullnessCoefficient() const {
     return (float)amountOfElements/tableSize;
 }
 
+template<typename T>
+int HashTable<T>::getSize() const {
+    return this->tableSize;
+}
+

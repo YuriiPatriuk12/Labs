@@ -75,6 +75,7 @@ public:
 
     void printChain(Node<T>* head) const;
     void print() const;
+    int getSize() const;
     float getFullnessCoefficient() const;
 
 private:
